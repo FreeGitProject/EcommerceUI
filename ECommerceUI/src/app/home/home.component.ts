@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { SuggestedProduct } from '../models/models';
-
+import { NgForOf } from '@angular/common';
+import { SuggestedProductsComponent } from '../suggested-products/suggested-products.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [NgForOf,SuggestedProductsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
